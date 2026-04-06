@@ -1,0 +1,23 @@
+body {
+  font: 100%/1.5 system-ui;
+  margin: 40px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin-top: 0;
+}
