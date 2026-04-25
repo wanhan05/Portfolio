@@ -1,0 +1,74 @@
+[
+  {
+    "title": "ChainSense",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Engineered behavioral features from 3.9M Ethereum transactions and applied PCA + K-means to classify wallet archetypes."
+  },
+  {
+    "title": "SoCalGuessr",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "CNN image classifier achieving 88.2% validation accuracy on Google Street View images across SoCal regions."
+  },
+  {
+    "title": "Volatility Spread Analyzer",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built EWMA-based realized volatility system with IV from ATM options and MongoDB storage for SFIC."
+  },
+  {
+    "title": "IMC Prosperity Trading Bot",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Developed arbitrage strategies for algorithmic trading competition, analyzing order book mechanics and P&L."
+  },
+  {
+    "title": "Brain Corp AMR Fleet Manager",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "MQTT-based fleet management system with AGV collision avoidance, pathfinding algorithms, and FastAPI backend."
+  },
+  {
+    "title": "DSC 106 Portfolio Site",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Personal portfolio site built with HTML, CSS, and JavaScript featuring dark mode and dynamic project rendering."
+  },
+  {
+    "title": "GroceryDB Visualization",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Persuasive data visualization exploring nutritional scores across grocery store brands using D3."
+  },
+  {
+    "title": "Flood Risk Modeling",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Geospatial flood risk model using elevation and precipitation data to identify high-risk zones."
+  },
+  {
+    "title": "AI Insurance Assistant",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "LLM-powered assistant for insurance policy Q&A, built during Triton Consulting Group project engagement."
+  },
+  {
+    "title": "Email Automation Scraper",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Automated email outreach pipeline using Python web scraping and Gmail API integration."
+  },
+  {
+    "title": "MNIST kNN Classifier",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Implemented k-nearest neighbors from scratch on MNIST dataset with gradient proofs and hyperparameter tuning."
+  },
+  {
+    "title": "SGD Optimizer Implementation",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Implemented stochastic gradient descent with Huber loss and least squares scaling proofs in Python."
+  }
+]
