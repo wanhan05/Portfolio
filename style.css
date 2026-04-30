@@ -114,3 +114,69 @@ html {
 .color-scheme select {
   font: inherit;
 }
+/* Lab 5: Pie chart */
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+#projects-pie-plot path {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+
+/* Legend */
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 0.5em;
+  padding: 0.5em;
+  margin: 0;
+  border: 1px solid var(--border-color, oklch(50% 10% 200 / 40%));
+  list-style: none;
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+}
+
+/* Pie + legend side by side */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Search bar */
+.searchBar {
+  display: block;
+  width: 100%;
+  margin-block: 1em;
+  padding: 0.5em;
+  font: inherit;
+  box-sizing: border-box;
+}
