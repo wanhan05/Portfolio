@@ -180,3 +180,90 @@ html {
   font: inherit;
   box-sizing: border-box;
 }
+/* Lab 6: Stats */
+dl.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  margin-block: 1em;
+}
+
+dl.stats dt {
+  font-size: 0.8em;
+  color: oklch(50% 0% 0);
+  grid-row: 1;
+}
+
+dl.stats dd {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  grid-row: 2;
+}
+
+/* Tooltip */
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3em 1em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info dt {
+  color: oklch(50% 0% 0);
+  font-size: 0.85em;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  background: canvas;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  border-radius: 0.5em;
+  box-shadow: 0 4px 12px oklch(0% 0% 0 / 20%);
+  padding: 1em;
+  font-size: 0.85em;
+  pointer-events: none;
+}
+
+/* Scatterplot */
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+.gridlines line {
+  stroke: oklch(80% 0% 0 / 30%);
+}
+
+.gridlines path {
+  display: none;
+}
+
+/* Marching ants brush */
+@keyframes marching-ants {
+  to { stroke-dashoffset: -8; }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
