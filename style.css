@@ -267,3 +267,94 @@ circle.selected {
   stroke-dasharray: 5 3;
   animation: marching-ants 2s linear infinite;
 }
+/* ─── Lab 8: Scrollytelling layout ─────────────────────────────────────── */
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+}
+
+/* Each scrolly step — add padding so steps take up screen space */
+.step {
+  padding-bottom: 60vh;
+  line-height: 1.6;
+  font-size: 0.95em;
+  color: oklch(30% 0% 0);
+}
+
+.step a {
+  color: var(--color-accent);
+}
+
+/* ─── Lab 8: File unit visualization ───────────────────────────────────── */
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-block: 1em;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+    margin-block: 0.4em;
+  }
+
+  dt {
+    grid-column: 1;
+    font-size: 0.85em;
+  }
+
+  dt small {
+    display: block;
+    color: oklch(50% 0% 0);
+    font-size: 0.85em;
+    font-weight: normal;
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+}
+
+/* Unit visualization dot */
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color, steelblue);
+  border-radius: 50%;
+}
+
+/* ─── Lab 8: Circle entry transitions ──────────────────────────────────── */
+circle {
+  transition: all 200ms, r calc(var(--r, 10) * 1ms);
+}
+
+@starting-style {
+  circle {
+    r: 0;
+  }
+}
