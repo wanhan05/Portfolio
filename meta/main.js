@@ -384,6 +384,9 @@ timeScale = d3.scaleTime()
 
 filteredCommits = commits;
 
+// Attach slider event listener here (module scope — can't use inline oninput)
+document.getElementById('commit-progress').addEventListener('input', onTimeSliderChange);
+
 // Initialize slider
 onTimeSliderChange();
 

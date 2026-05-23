@@ -292,7 +292,7 @@ circle.selected {
 
 /* Each scrolly step — add padding so steps take up screen space */
 .step {
-  padding-bottom: 60vh;
+  padding-bottom: 30vh;
   line-height: 1.6;
   font-size: 0.95em;
   color: oklch(30% 0% 0);
