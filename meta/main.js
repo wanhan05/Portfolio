@@ -319,6 +319,8 @@ function updateFileDisplay(filteredCommitsData) {
           div.append('dt').append('code');
           div.append('dd');
         }),
+      (update) => update,
+      (exit) => exit.remove(),
     );
 
   filesContainer.select('dt > code').html(
@@ -328,7 +330,7 @@ function updateFileDisplay(filteredCommitsData) {
   filesContainer
     .select('dd')
     .selectAll('div')
-    .data((d) => d.lines)
+    .data((d) => d.lines, (_, i) => i)
     .join('div')
     .attr('class', 'loc')
     .attr('style', (d) => `--color: ${colors(d.type)}`);
